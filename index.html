@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreatywna Nazwa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="h-screen bg-gray-100 flex justify-center items-center">
+                    <div className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md">
+                        <header className="text-center mb-4">
+                            <h1 className="text-3xl font-bold text-gray-800">Twórz z Pasją – Twoja Kreatywna Przestrzeń</h1>
+                        </header>
+                        <main>
+                            <h2 className="text-2xl font-bold text-gray-800 mb-2">Cechy</h2>
+                            <ul>
+                                <li className="flex items-center mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span className="ml-2 text-gray-600">Interaktywny kreator treści z podpowiedziami AI</span>
+                                </li>
+                                <li className="flex items-center mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span className="ml-2 text-gray-600">Wbudowany system wersjonowania i współpracy zespołowej</span>
+                                </li>
+                                <li className="flex items-center mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span className="ml-2 text-gray-600">Responsywny design z natywną obsługą trybu ciemnego</span>
+                                </li>
+                            </ul>
+                        </main>
+                        <footer className="text-center mt-4">
+                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Zacznij tworzyć</button>
+                            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2">Dowiedz się więcej</button>
+                        </footer>
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
